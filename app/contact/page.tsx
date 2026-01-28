@@ -21,11 +21,11 @@ export default function Page() {
 
   async function handleCopyEmail() {
     try {
-      await navigator.clipboard.writeText("contato@ezequiaslopes.com");
+      await navigator.clipboard.writeText("workzeca@gmail.com");
       setCopied(true);
       setTimeout(() => setCopied(false), 1500);
     } catch {
-      window.location.href = "mailto:contato@ezequiaslopes.com";
+      window.location.href = "mailto:workzeca@gmail.com";
     }
   }
 
