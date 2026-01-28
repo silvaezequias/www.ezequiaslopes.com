@@ -51,10 +51,10 @@ export default function Page() {
                 E-mail direto
               </p>
               <a
-                href="mailto:contato@ezequiaslopes.com"
+                href="mailto:workzeca@gmail.com"
                 className={`${garamond.className} text-xl text-amber-300 hover:text-amber-200 underline-offset-4 hover:underline`}
               >
-                contato@ezequiaslopes.com
+                workzeca@gmail.com
               </a>
             </div>
             <div className="flex gap-2">
@@ -83,7 +83,7 @@ export default function Page() {
                 className="bg-amber-300 text-black hover:bg-amber-200"
                 aria-label="Abrir cliente de e-mail para enviar mensagem"
               >
-                <a href="mailto:contato@ezequiaslopes.com">
+                <a href="mailto:workzeca@gmail.com">
                   <Mail className="mr-2 h-4 w-4" />
                   Escrever
                 </a>
