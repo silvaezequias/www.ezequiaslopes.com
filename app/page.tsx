@@ -1,12 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Camera, Code2, Music2 } from "lucide-react";
+import { ArrowRight, Camera, Code2, Gamepad } from "lucide-react";
+
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 import GrainBG from "@/components/grain-bg";
 import { Button } from "@/components/ui/button";
 import { garamond, jetmono } from "@/lib/fonts";
 import { Projects } from "@/components/projects";
+import { Games } from "@/components/games";
 
 export default function Page() {
   return (
@@ -19,17 +21,17 @@ export default function Page() {
               <p
                 className={`${jetmono.className} text-[11px] uppercase tracking-widest text-neutral-500`}
               >
-                Desenvolvedor • Fotógrafo • Compositor
+                Desenvolvedor • Fotógrafo • Jogador
               </p>
               <h1
                 className={`${garamond.className} mt-3 text-4xl sm:text-5xl leading-tight text-neutral-100`}
               >
-                Crio experiências digitais e sonoras que respiram silêncio, luz
-                e detalhe.
+                Crio experiências digitais através de aplicações, jogos e
+                fotografias.
               </h1>
               <p className="mt-5 text-neutral-400 max-w-prose">
-                Sou Ezequias Lopes. Desenvolvo software e automatizações,
-                fotografo o íntimo do cotidiano e componho histórias.
+                Sou Ezequias Lopes. Desenvolvo software, automatizações e jogos
+                digitais. Gosto de fotografia e registrar momentos.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Button
@@ -63,9 +65,9 @@ export default function Page() {
                   </div>
                 </div>
                 <div className="rounded-lg border border-neutral-900 bg-neutral-950/40 p-4 overflow-hidden">
-                  <Music2 className="h-5 w-5 text-amber-300" />
+                  <Gamepad className="h-5 w-5 text-amber-300" />
                   <div className="mt-2 text-sm text-neutral-400 ellipsis">
-                    Composições & Sentimentos
+                    Jogos, Histórias & Experiências{" "}
                   </div>
                 </div>
               </div>
@@ -103,7 +105,11 @@ export default function Page() {
               Ver todos
             </Link>
           </div>
-          <Projects amount={2} />
+
+          <div className="grid sm:grid-cols-2 w-full gap-6">
+            <Games amount={1} />
+            <Projects amount={1} />
+          </div>
         </section>
 
         <SiteFooter />

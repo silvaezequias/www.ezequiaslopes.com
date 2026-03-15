@@ -24,10 +24,10 @@ export default function SiteFooter() {
           </div>
           <div className="flex flex-col items-start sm:items-end gap-2">
             <a
-              href="mailto:contato@ezequiaslopes.com"
+              href="mailto:workzeca@gmail.com"
               className={`${jetmono.className} text-xs uppercase tracking-widest text-amber-300 hover:text-amber-200`}
             >
-              contato@ezequiaslopes.com
+              workzeca@gmail.com
             </a>
             <div
               className={`${jetmono.className} text-xs uppercase tracking-widest text-neutral-500`}
