@@ -8,7 +8,6 @@ import {
   Sheet,
   SheetContent,
   SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { garamond, jetmono } from "@/lib/fonts";
@@ -16,8 +15,9 @@ import { garamond, jetmono } from "@/lib/fonts";
 const links = [
   { href: "/", label: "Início" },
   { href: "/work", label: "Trabalhos" },
-  { href: "/photography", label: "Fotografia" },
-  { href: "/music", label: "Música" },
+  { href: "/games", label: "Jogos Digitais" },
+  // { href: "/photography", label: "Fotografia" },
+  // { href: "/music", label: "Música" },
   { href: "/about", label: "Sobre" },
   { href: "/contact", label: "Contato" },
 ];
@@ -36,7 +36,7 @@ export default function SiteHeader() {
           <span
             className={`${jetmono.className} text-[10px] tracking-widest uppercase text-neutral-500 group-hover:text-amber-300 transition-colors`}
           >
-            dev • foto • música
+            dev • foto • jogos
           </span>
         </Link>
 
